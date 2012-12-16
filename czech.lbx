@@ -1,0 +1,411 @@
+\ProvidesFile{czech.lbx}
+[\abx@lbxid]
+
+\InheritBibliographyExtras{english}
+\InheritBibliographyStrings{english}
+
+
+\DeclareBibliographyStrings{%
+  bibliography     = {{Bibliografie}{Bibliografie}},
+  references       = {{Odkazy}{Odkazy}},
+  shorthands       = {{Seznam zkratek}{Zkratky}},
+  editor           = {{editor}{ed\adddot}},
+  editors          = {{editoři}{ed\adddot}},
+  compiler         = {{sestavil}{sest\adddot}},
+  compilers        = {{sestavili}{sest\adddot}},
+  redactor         = {{redaktor}{red\adddot}},
+  redactors        = {{redaktoři}{red\adddot}},
+  founder          = {{zakladatel}{zakl\adddot}},
+  founders         = {{zakladatelé}{zakl\adddot}},
+  continuator      = {{pokračovatel}{pokr\adddot}}, % FIXME: unsure
+  continuators     = {{pokračovatelé}{pokr\adddot}}, % FIXME: unsure
+ 
+  collaborator     = {{spolupracovník}{spoluprac\adddot}},  % FIXME: unsure
+  collaborators    = {{spolupracovníci}{spoluprac\adddot}}, % FIXME: unsure
+  translator       = {{překladatel}{překl\adddot}},
+  translators      = {{překladatelé}{překl\adddot}},
+  commentator      = {{komentátor}{kom\adddot}},
+  commentators     = {{komentátoři}{kom\adddot}},
+  anotátor        = {{anotátor}{anot\adddot}},
+  anotátoři       = {{anotátoři}{anot\adddot}},
+  commentary       = {{komentátor}{komm\adddot}}, % FIXME: unsure
+  annotations      = {{anotatace}{anot\adddot}},
+  introduction     = {{úvod}{úv\adddot}},
+  foreword         = {{předmluva}{předml\adddot}},
+  afterword        = {{doslov}{dosl\adddot}},
+  editortr         = {{editor a překladatel}%
+                      {ed\adddotspace a překl\adddot}},
+  editorstr        = {{editoři a překladatelé}%
+                      {ed\adddotspace a překl\adddot}
+  
+  editorco         = {{editor a komentátor}%
+                      {ed\adddotspace a kom\adddot}},  
+  editorsco        = {{editor a komentátoři}%
+                      {ed\adddotspace a kom\adddot}},
+  editoran         = {{editor a anotátor}%
+                      {ed\adddotspace a anot\adddot}},
+  editorsan        = {{editor a anotátoři}%
+                      {ed\adddotspace a anot\adddot}},
+  editorin         = {{editor a úvod}%
+                      {ed\adddotspace úv\adddot}},
+  editorsin        = {{editoři a úvod}%
+                      {ed\adddotspace a úv\adddot}},
+  editorfo         = {{editor a předmluva}%
+                      {ed\adddotspace a předml\adddot}},
+  editorsfo        = {{editoři a předmluva}%
+                      {ed\adddotspace a předml\adddot}},
+  editoraf         = {{editor a doslov}%
+                      {ed\adddotspace a dosl\adddot}},
+  editorsaf        = {{editoři a  doslov}%
+                      {ed\adddotspace a dosl\adddot}},
+  editortrco       = {{editor, překlad\ a komentátor}% 
+                      {ed.,\addabbrvspace překl\adddot\ a kom\adddot}}, % FIXME: hruznost
+  editorstrco      = {{editoři, překladatelé\ a komentátoři}%
+                      {ed.,\addabbrvspace překl\adddot\ a comm\adddot}},
+  editortran       = {{editor, překladatel\ a anotátor}%
+                      {ed.,\addabbrvspace překl\adddot\ a anot\adddot}},
+  editorstran      = {{editors, překladatelé\ a anotátoři}%
+                      {ed.,\addabbrvspace překl\adddot\ a anot\adddot}},
+  editortrin       = {{editor, překladatel\ a úvod}%
+                      {ed.,\addabbrvspace překl\adddot\ a úvod\adddot}},
+  editorstrin      = {{editors, překladatelé\ a úvod}%
+                      {ed.,\addabbrvspace překl\adddot\ a úvod\adddot}},
+  editortrfo       = {{editor, překladatel\ a předmluva}%
+                      {ed.,\addabbrvspace překl\adddot\ a předml\adddot}},
+  editorstrfo      = {{editors, překladatelé\ a předmluva}%
+                      {ed.,\addabbrvspace překl\adddot\ a předml\adddot}},
+  editortraf       = {{editor, překladatel\ a  doslov}%
+                      {ed.,\addabbrvspace překl\adddot\ a afterw\adddot}},
+  editorstraf      = {{editors, překladatelé\ a  doslov}%
+                      {ed.,\addabbrvspace překl\adddot\ a afterw\adddot}},
+  editorcoin       = {{editor, commentator\ a úvod}%
+                      {ed.,\addabbrvspace comm\adddot\ a úvod\adddot}},
+  editorscoin      = {{editors, commentators\ a úvod}%
+                      {ed.,\addabbrvspace comm\adddot\ a úvod\adddot}},
+  editorcofo       = {{editor, commentator\ a předmluva}%
+                      {ed.,\addabbrvspace comm\adddot\ a předml\adddot}},
+  editorscofo      = {{editors, commentators\ a předmluva}%
+                      {ed.,\addabbrvspace comm\adddot\ a předml\adddot}},
+  editorcoaf       = {{editor, commentator\ a  doslov}%
+                      {ed.,\addabbrvspace comm\adddot\ a dosl\adddot}},
+  editorscoaf      = {{editors, commentators\ a  doslov}%
+                      {ed.,\addabbrvspace comm\adddot\ a dosl\adddot}},
+  editoranin       = {{editor, anotátor\ a úvod}%
+                      {ed.,\addabbrvspace anot\adddot\ a úvod\adddot}},
+  editorsanin      = {{editors, anotátoři\ a úvod}%
+                      {ed.,\addabbrvspace anot\adddot\ a úvod\adddot}},
+  editoranfo       = {{editor, anotátor\ a předmluva}%
+                      {ed.,\addabbrvspace anot\adddot\ a předml\adddot}},
+  editorsanfo      = {{editors, anotátoři\ a předmluva}%
+                      {ed.,\addabbrvspace anot\adddot\ a předml\adddot}},
+  editoranaf       = {{editor, anotátor\ a  doslov}%
+                      {ed.,\addabbrvspace anot\adddot\ a dosl\adddot}},
+  editorsanaf      = {{editors, anotátoři\ a  doslov}%
+                      {ed.,\addabbrvspace anot\adddot\ a dosl\adddot}},
+  editortrcoin     = {{editor, překladatel, commentator\ a úvod}%
+                      {ed.,\addabbrvspace trans., comm\adddot\ a úvod\adddot}},
+  editorstrcoin    = {{editors, překladatelé, commentators\ a úvod}%
+                      {ed.,\addabbrvspace trans., comm\adddot\ a úvod\adddot}},
+  editortrcofo     = {{editor, překladatel, commentator\ a předmluva}%
+                      {ed.,\addabbrvspace trans., comm\adddot\ a předml\adddot}},
+  editorstrcofo    = {{editors, překladatelé, commentators\ a předmluva}%
+                      {ed.,\addabbrvspace trans., comm\adddot\ a předml\adddot}},
+  editortrcoaf     = {{editor, překladatel, commentator\ a  doslov}%
+                      {ed.,\addabbrvspace trans., comm\adddot\ a dosl\adddot}},
+  editorstrcoaf    = {{editors, překladatelé, commentators\ a  doslov}%
+                      {ed.,\addabbrvspace trans., comm\adddot\ a dosl\adddot}},
+  editortranin     = {{editor, překladatel, anotátor\ a úvod}%
+                      {ed.,\addabbrvspace trans., anot\adddot\ a úvod\adddot}},
+  editorstranin    = {{editors, překladatelé, anotátoři\ a úvod}%
+                      {ed.,\addabbrvspace trans., anot\adddot\ a úvod\adddot}},
+  editortranfo     = {{editor, překladatel, anotátor\ a předmluva}%
+                      {ed.,\addabbrvspace trans., anot\adddot\ a předml\adddot}},
+  editorstranfo    = {{editors, překladatelé, anotátoři\ a předmluva}%
+                      {ed.,\addabbrvspace trans., anot\adddot\ a předml\adddot}},
+  editortranaf     = {{editor, překladatel, anotátor\ a  doslov}%
+                      {ed.,\addabbrvspace trans., anot\adddot\ a dosl\adddot}},
+  editorstranaf    = {{editors, překladatelé, anotátoři\ a  doslov}%
+                      {ed.,\addabbrvspace trans., anot\adddot\ a dosl\adddot}}, 
+
+  translatorco     = {{překladatel a komentátor}%
+                      {překl\adddot\ a comm\adddot}},
+  translatorsco    = {{překladatelé a komentátoři}%
+                      {překl\adddot\ a comm\adddot}},
+  translatoran     = {{překladatel a anotátor}%
+                      {překl\adddot\ a anot\adddot}},
+  translatorsan    = {{překladatelé a anotátoři}%
+                      {překl\adddot\ a anot\adddot}},
+  translatorin     = {{překlad a úvod}%
+                      {překl\adddot\ a úvod\adddot}},
+  translatorsin    = {{překlad a úvod}%
+                      {překl\adddot\ a úvod\adddot}},
+  translatorfo     = {{překlad a předmluva}%
+                      {překl\adddot\ a předml\adddot}},
+  translatorsfo    = {{překlad a předmluva}%
+                      {překl\adddot\ a předml\adddot}},
+  translatoraf     = {{překlad a  doslov}%
+                      {překl\adddot\ a dosl\adddot}},
+  translatorsaf    = {{překlad a  doslov}%
+                      {překl\adddot\ a dosl\adddot}},
+  translatorcoin   = {{překlad, commentary\ a úvod}%
+                      {trans., comm\adddot\ a úvod\adddot}},
+  translatorscoin  = {{překlad, commentary\ a úvod}%
+                      {trans., comm\adddot\ a úvod\adddot}},
+  translatorcofo   = {{překlad, commentary\ a předmluva}%
+                      {trans., comm\adddot\ a předml\adddot}},
+  translatorscofo  = {{překlad, commentary\ a předmluva}%
+                      {trans., comm\adddot\ a předml\adddot}},
+  translatorcoaf   = {{překlad, commentary\ a  doslov}%
+                      {trans., comm\adddot\ a dosl\adddot}},
+  translatorscoaf  = {{překlad, commentary\ a  doslov}%
+                      {trans., comm\adddot\ a dosl\adddot}},
+  translatoranin   = {{překlad, anotace,\ a úvod}%
+                      {trans., anot\adddot\ a úvod\adddot}},
+  translatorsanin  = {{překlad, anotace,\ a úvod}%
+                      {trans., anot\adddot\ a úvod\adddot}},
+  translatoranfo   = {{překlad, anotace,\ a předmluva}%
+                      {trans., anot\adddot\ a předml\adddot}},
+  translatorsanfo  = {{překlad, anotace,\ a předmluva}%
+                      {trans., anot\adddot\ a předml\adddot}},
+  translatoranaf   = {{překlad, anotace,\ a  doslov}%
+                      {trans., anot\adddot\ a dosl\adddot}},
+  translatorsanaf  = {{překlad, anotace,\ a  doslov}%
+                      {trans., anot\adddot\ a dosl\adddot}},
+
+  byauthor         = {{by}{by}},
+  byeditor         = {{edited by}{ed\adddotspace by}},
+  bycompiler       = {{compiled by}{comp\adddotspace by}},
+  byredactor       = {{redacted by}{red\adddotspace by}},
+  byfounder        = {{founded by}{found\adddotspace by}},
+  bycontinuator    = {{continued by}{cont\adddotspace by}},
+  bycollaborator   = {{in collaboration with}{in collab\adddotspace with}}, % FIXME: unsure
+  bytranslator     = {{translated \lbx@lfromlang\ by}{překl\adddot\ \lbx@sfromlang\ by}},
+  bycommentator    = {{commented by}{comm\adddot\ by}},
+  byanotátor      = {{annotated by}{anot\adddot\ by}},
+  withcommentator  = {{with a commentary by}{with a comment\adddot\ by}},
+  withanotátor    = {{s anotacemi od}{s anot\adddot\ od}},
+  withintroduction = {{s úvodem od}{u úv\adddot\ od}},
+  withforeword     = {{s předmluvou od}{s předml\adddot\ od}},
+  withafterword    = {{with an afterword by}{with an dosl\adddot\ by}},
+  byeditortr       = {{edited a translated \lbx@lfromlang\ by}%
+                      {ed\adddotspace a překl\adddot\ \lbx@sfromlang\ by}},
+  byeditorco       = {{edited a commented by}%
+                      {ed\adddotspace a kom\adddot\ by}},
+  byeditoran       = {{edited a annotated by}%
+                      {ed\adddotspace a anot\adddot\ by}},
+  byeditorin       = {{edited, with an úvod, by}%
+                      {ed.,\addabbrvspace with an introd., by}},
+  byeditorfo       = {{edited, with a foreword, by}%
+                      {ed.,\addabbrvspace with a forew., by}},
+  byeditoraf       = {{edited, with an afterword, by}%
+                      {ed.,\addabbrvspace with an afterw., by}},
+  byeditortrco     = {{edited, translated \lbx@lfromlang\ a commented by}%
+                      {ed.,\addabbrvspace překl\adddot\ \lbx@sfromlang\ a kom\adddot\ by}},
+  byeditortran     = {{edited, translated \lbx@lfromlang\ a annotated by}%
+                      {ed.,\addabbrvspace překl\adddot\ \lbx@sfromlang\ a anot\adddot\ by}},
+  byeditortrin     = {{edited a translated \lbx@lfromlang, with an úvod, by}%
+                      {ed\adddotspace a překl\adddot\ \lbx@sfromlang, with an introd., by}},
+  byeditortrfo     = {{edited a translated \lbx@lfromlang, with a foreword, by}%
+                      {ed\adddotspace a překl\adddot\ \lbx@sfromlang, with a forew., by}},
+  byeditortraf     = {{edited a translated \lbx@lfromlang, with an afterword, by}%
+                      {ed\adddotspace a překl\adddot\ \lbx@sfromlang, with an afterw., by}},
+  byeditorcoin     = {{edited a commented, with an úvod, by}%
+                      {ed\adddotspace a comm., with an introd., by}},
+  byeditorcofo     = {{edited a commented, with a foreword, by}%
+                      {ed\adddotspace a comm., with a forew., by}},
+  byeditorcoaf     = {{edited a commented, with an afterword, by}%
+                      {ed\adddotspace a comm., with an afterw., by}},
+  byeditoranin     = {{edited a annotated, with an úvod, by}%
+                      {ed\adddotspace a annot., with an introd., by}},
+  byeditoranfo     = {{edited a annotated, with a foreword, by}%
+                      {ed\adddotspace a annot., with a forew., by}},
+  byeditoranaf     = {{edited a annotated, with an afterword, by}%
+                      {ed\adddotspace a annot., with an afterw., by}},
+  byeditortrcoin   = {{edited, translated \lbx@lfromlang\ a commented, with an úvod, by}%
+                      {ed.,\addabbrvspace překl\adddot\ \lbx@sfromlang\ a comm., with an introd., by}},
+  byeditortrcofo   = {{edited, translated \lbx@lfromlang\ a commented, with a foreword, by}%
+                      {ed.,\addabbrvspace překl\adddot\ \lbx@sfromlang\ a comm., with a forew., by}},
+  byeditortrcoaf   = {{edited, translated \lbx@lfromlang\ a commented, with an afterword, by}%
+                      {ed.,\addabbrvspace překl\adddot\ \lbx@sfromlang\ a comm., with an afterw., by}},
+  byeditortranin   = {{edited, translated \lbx@lfromlang\ a annotated, with an úvod, by}%
+                      {ed.,\addabbrvspace překl\adddot\ \lbx@sfromlang\ a annot, with an introd., by}},
+  byeditortranfo   = {{edited, translated \lbx@lfromlang\ a annotated, with a foreword, by}%
+                      {ed.,\addabbrvspace překl\adddot\ \lbx@sfromlang\ a annot, with a forew., by}},
+  byeditortranaf   = {{edited, translated \lbx@lfromlang\ a annotated, with an afterword, by}%
+                      {ed.,\addabbrvspace překl\adddot\ \lbx@sfromlang\ a annot, with an afterw., by}},
+  bytranslatorco   = {{translated \lbx@lfromlang\ a commented by}%
+                      {překl\adddot\ \lbx@sfromlang\ a kom\adddot\ by}},
+  bytranslatoran   = {{translated \lbx@lfromlang\ a annotated by}%
+                      {překl\adddot\ \lbx@sfromlang\ a anot\adddot\ by}},
+  bytranslatorin   = {{translated \lbx@lfromlang, with an úvod, by}%
+                      {překl\adddot\ \lbx@sfromlang, with an introd., by}},
+  bytranslatorfo   = {{translated \lbx@lfromlang, with a foreword, by}%
+                      {překl\adddot\ \lbx@sfromlang, with a forew., by}},
+  bytranslatoraf   = {{translated \lbx@lfromlang, with an afterword, by}%
+                      {překl\adddot\ \lbx@sfromlang, with an afterw., by}},
+  bytranslatorcoin = {{translated \lbx@lfromlang\ a commented, with an úvod, by}%
+                      {překl\adddot\ \lbx@sfromlang\ a comm., with an introd., by}},
+  bytranslatorcofo = {{translated \lbx@lfromlang\ a commented, with a foreword, by}%
+                      {překl\adddot\ \lbx@sfromlang\ a comm., with a forew., by}},
+  bytranslatorcoaf = {{translated \lbx@lfromlang\ a commented, with an afterword, by}%
+                      {překl\adddot\ \lbx@sfromlang\ a comm., with an afterw., by}},
+  bytranslatoranin = {{translated \lbx@lfromlang\ a annotated, with an úvod, by}%
+                      {překl\adddot\ \lbx@sfromlang\ a annot., with an introd., by}},
+  bytranslatoranfo = {{translated \lbx@lfromlang\ a annotated, with a foreword, by}%
+                      {překl\adddot\ \lbx@sfromlang\ a annot., with a forew., by}},
+  bytranslatoranaf = {{translated \lbx@lfromlang\ a annotated, with an afterword, by}%
+                      {překl\adddot\ \lbx@sfromlang\ a annot., with an afterw., by}},
+
+
+  and              = {{a}{a}},
+  andothers        = {{et\addabbrvspace al\adddot}{et\addabbrvspace al\adddot}},
+  andmore          = {{et\addabbrvspace al\adddot}{et\addabbrvspace al\adddot}},
+  volume           = {{ro\v{c}n\'ik}{ro\v{c}\adddot}},
+  volumes          = {{ro\v{c}n\'iky}{ro\v{c}\adddot}},
+  involumes        = {{in}{in}},
+  jourvol          = {{ro\v{c}n\'ik}{ro\v{c}\adddot}},
+  jourser          = {{série}{sér\adddot}}, % může bát též řada
+  book             = {{kniha}{kniha}},
+  part             = {{část}{část}},
+  issue            = {{číslo}{číslo}},
+  newseries        = {{nová série}{n. sér\adddot}},
+  oldseries        = {{stará série}{st. sér\adddot}},
+  edition          = {{vydání}{vyd\adddot}},
+  reprint          = {{reprint}{repr\adddot}},
+  reprintof        = {{reprint}{repr\adddotspace}},
+  reprintas        = {{reprintováno jako}{repr\adddotspace jako}},
+  reprintfrom      = {{reprintováno z}{repr\adddotspace z}},
+  reviewof         = {{review of}{rev\adddotspace of}},
+  translationof    = {{překlad}{překl\adddotspace}},
+  translationas    = {{přeloženo jako}{přel\adddotspace jako}},
+  translationfrom  = {{přeloženo z}{přel\adddotspace t}},
+  origpubas        = {{původně vydáno jako}{pův\adddotspace vyd\adddotspace jako}},
+  origpubin        = {{původně vydáno v}{pův\adddotspace vyd\adddotspace v},
+  astitle          = {{jako}{as}},
+  bypublisher      = {{od}{od}}, % nejisté
+  page             = {{strana}{s\adddot}},
+  pages            = {{strany}{s\adddot}},
+  column           = {{sloupek}{sl\adddot}}, % nebo sloupec?
+  columns          = {{sloupky}{sl\adddot}},
+  line             = {{řádek}{ř\adddot}},
+  lines            = {{řádky}{ř\adddot}},
+  verse            = {{verš}{v\adddot}},
+  verses           = {{verše}{v\adddot}},
+  section          = {{sekce}{\S}},
+  sections         = {{sekce}{\S\S}},
+  paragraph        = {{odstavec}{ods\adddot}},
+  paragraphs       = {{odstavce}{ods\adddot}},
+  in               = {{v}{v}}, % pokud je pozadovano in, treba u sborniku
+  inseries         = {{v}{v}}, % je nutne pouzit lokalni lbx soubor
+  ofseries         = {{z}{z}},   % taky prostor pro lokalni lbx
+  number           = {{číslo}{č\adddot}},
+  chapter          = {{kapitola}{kap\adddot}},
+  mathesis         = {{diplomová práce}{dipl\addabbrvspace}},
+  phdthesis        = {{disertační\addabbrvspace práce}{dis\addabbrvspace}},
+  candthesis       = {{kandidátská práce}{kand\adddotspace pr\adddotspace}}, % mozna,
+  resreport        = {{výzkumná zpráca}{výzk\adddot zpr\adddot}},
+  techreport       = {{technická zpráva}{tech\adddotspace zpr\adddot}},
+  software         = {{počítačový software}{soft\adddot}},
+  datacd           = {{CD-ROM}{CD-ROM}},
+  audiocd          = {{audio CD}{audio CD}},
+  version          = {{verze}{ver\adddotspace}},
+  urlseen={{citov\'ano}{cit\adddot}},
+  url = {{Dostupn\'y z WWW}{WWW}},  
+  inpreparation    = {{v přípravě}{v přípravě}},
+  submitted        = {{odesláno}{odes\adddotspace}},
+  forthcoming      = {{budoucí}{bud\adddotspace}},
+  inpress          = {{v tisku}{v tisku}},
+  prepublished     = {{před publikováním}{před \adddotspace}},
+  citedas          = {{dále citováno jako}{dále citováno jako}},
+  thiscite         = {{zvláště}{zvl\adddot}},
+  seenote          = {{viz poznámka}{viz poz\adddot}},
+  quotedin         = {{citováno v}{cit\adddotspace v}},
+  idem             = {{idem}{idem}},
+  idemsm           = {{idem}{idem}},
+  idemsf           = {{eadem}{eadem}},
+  idemsn           = {{idem}{idem}},
+  idempm           = {{eidem}{eidem}},
+  idempf           = {{eaedem}{eaedem}},
+  idempn           = {{eadem}{eadem}},
+  idempp           = {{eidem}{eidem}},
+  ibidem           = {{ibidem}{ibid\adddot}},
+  opcit            = {{op\adddotspace cit\adddot}{op\adddotspace cit\adddot}},
+  loccit           = {{loc\adddotspace cit\adddot}{loc\adddotspace cit\adddot}},
+  confer           = {{cf\adddot}{cf\adddot}},
+  sequens          = {{sq\adddot}{sq\adddot}},
+  sequentes        = {{sqq\adddot}{sqq\adddot}},
+  passim           = {{passim}{pass\adddot}},
+  see              = {{viz}{viz}},
+  seealso          = {{viz též}{viz též}},
+  backrefpage      = {{citováno na straně}{cit\adddotspace na s\adddot}},
+  backrefpages     = {{citováno na stranách}{cit\adddotspace na s\adddot}},
+  january          = {{ledna}{led\adddot}},
+  february         = {{února}{ún\adddot}},
+  march            = {{března}{břez\adddot}},
+  april            = {{dubna}{dub\adddot}},
+  may              = {{kvetna}{květ\adddot}},
+  june             = {{června}{červ\adddot}},
+  july             = {{července}{čvc}},
+  august           = {{srpna}{srp\adddot}},
+  september        = {{září}{zář\adddot}},
+  october          = {{října}{říj\adddot}},
+  november         = {{listopadu}{lis\adddot}},
+  december         = {{prosince}{pros\adddot}},
+langamerican     = {{americká angličtina}{am\adddot angl\adddot}},
+  langbrazilian    = {{brazilská portugalština}{braz\adddot portugal\adddot}},
+  langcroatian     = {{chorvatština}{chorv\adddot}},
+  langdanish       = {{dánština}{dán\adddot}},
+  langdutch        = {{holandština}{hol.\adddot}},
+  langenglish      = {{angličtina}{angl\adddot}},
+  langfinnish      = {{finština}{fin\adddot}},
+  langfrench       = {{francouzština}{franc\adddot}},
+  langgerman       = {{němčina}{něm\adddot}},
+  langgreek        = {{řečtina}{řeč\adddot}},
+  langitalian      = {{italština}{ital\adddot}},
+  langlatin        = {{latina}{lat\adddot}},
+  langnorwegian    = {{norština}{norš\adddot}},
+  langportuguese   = {{portugalština}{port\adddot}},
+  langspanish      = {{španělština}{špaň\adddot}},
+  langswedish      = {{švédština}{švéd\adddot}},
+  fromamerican     = {{z americké angličtiny}{z amer\adddot angl\adddot}},
+  frombrazilian    = {{z brazilské portugalštiny}{z braz\adddotspace port\adddot}},
+  fromcroatian     = {{z chorvatštiny}{z chorv.},
+  fromdanish       = {{z dánštiny}{z dán\adddot}},
+  fromdutch        = {{z holandštiny}{z hol\adddot}},
+  fromenglish      = {{z angličtiny}{z angl\adddot}},
+  fromfinish       = {{z finštiny}{z fin.}},
+  fromfrench       = {{z francouzštiny}{z franc\adddot}},
+  fromgerman       = {{z němčiny}{z něm\adddot}},
+  fromgreek        = {{z řečtiny}{z řeč\adddot}},
+  fromitalian      = {{z italštiny}{z ital\adddot}},
+  fromlatin        = {{z latiny}{z lat\adddot}},
+  fromnorwegian    = {{z norštiny}{z nor\adddot}},
+  fromportuguese   = {{z portugalštiny}{z portugalštiny}},
+  fromspanish      = {{ze španělštiny}{ze špaň\adddot}},
+  fromswedish      = {{ze švédštiny}{ze švéd\adddot}},
+  countryde        = {{Německo}{DE}},
+  countryeu        = {{Evropská unie}{EU}},
+  countryep        = {{Evropská unie}{EP}},
+  countryfr        = {{Francie}{FR}},
+  countryuk        = {{Velká Británie}{GB}},
+  countryus        = {{Spojené Státy Americké}{US}},
+  patent           = {{patent}{pat\adddot}},
+  patentde         = {{německý patent}{něm\addd pat\adddot}},
+  patenteu         = {{evropský patent}{evropský pat\adddot}},
+  patentfr         = {{francouzský patent}{francouzský pat\adddot}},
+  patentuk         = {{britský patent}{britský pat\adddot}},
+  patentus         = {{americký patent}{US\adddotspace pat\adddot}},
+  patreq           = {{patentová žádost}{pat\adddot\ žád\adddot}},
+  patreqde         = {{německá patentová žádost}{německá pat\adddot\ žád\adddot}},
+  patreqeu         = {{evropská patentová žádost}{ev\adddot\ pat\adddot\ žád\adddot}},
+  patreqfr         = {{francouzská patentová žádost}{franc\adddot\ pat\adddot\ žád\adddot}},
+  patrequk         = {{britská patentová žádost}{brit\adddot\
+ pat\adddot\ žád\adddot}},
+  patrequs         = {{US\adddotspace patentová žádost}{US\adddotspace pat\adddot\ žád\adddot}},
+  file             = {{soubor}{soub\adddot}},
+  library          = {{knihovna}{knih\adddot}},
+  abstract         = {{abstrakt}{abst\adddot}},
+  annotation       = {{anotace}{anot\adddot}},
+}
+\endinput
+
