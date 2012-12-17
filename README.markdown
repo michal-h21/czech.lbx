@@ -31,7 +31,7 @@ do lokálního `texmf` stromu. Jeho umístění zjistíte příkazem
 
     kpsewhich -var-value=TEXMFHOME
 
-Zde vytvořte adresář `tex/latex/biblatex/lbx` a umístěte tam soubor `czech.lbx`.
+Zde vytvořte adresář `tex/latex/biblatex/lbx` a umístěte soubor `czech.lbx`.
 
 Licence
 -------
