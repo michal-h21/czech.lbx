@@ -8,7 +8,7 @@ text byl kódovaný v kódování utf-8, což přinášelo problémy v dokumente
 
 Protože jsem v poslední době zaznamenal zvýšený zájem o českou podporu pro biblatex, rozhodl jsem se napravit 
 výše zmíněné nedostatky a vytvořil nový lokalizační soubor. Ten vychází ze současných lokalizačních řetězců pro biblatex
-verze 2.4 a pokusil jsem se přeložit všechny termíny. 
+verze 2.4 a měl by obsahovat překlad všech termínů. 
 
 Upozornění
 ----------
@@ -22,7 +22,7 @@ Použití
 
 Zdrojové texty lokalizace jsou obsažené v souboru `czech-utf-source.lbx`, kde jsou termíny zapisované v kódování
 utf-8. Z důvodů kompatibility je třeba tento soubor zkonvertovat do kódování ASCII s využitím TeXových sekvencí pro 
-diakritiku. Pro tento účel je určený skript uni2tex, který je třeba spouštět tímto způsobem:
+diakritiku. Pro tento účel je určený skript uni2tex, který lze spoustit tímto způsobem:
 
     python uni2tex czech-utf-source.lbx > czech.lbx
 
