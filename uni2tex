@@ -40,5 +40,5 @@ def uni2tex(text):
 
 if __name__ == '__main__':
     for line in fileinput.input():
-        t = unicode(line, "utf-8")
+        t = unicode(line.strip(), "utf-8")
         print(uni2tex(t))
