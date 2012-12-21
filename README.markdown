@@ -10,6 +10,8 @@ Protože jsem v poslední době zaznamenal zvýšený zájem o českou podporu p
 výše zmíněné nedostatky a vytvořil nový lokalizační soubor. Ten vychází ze současných lokalizačních řetězců pro biblatex
 verze 2.4 a měl by obsahovat překlad všech termínů. 
 
+Pro uživatele starších verzí biblatexu je připravena větev bbl-1.4, která obsahuje soubor `czech.lbx` upravený tak, aby šel zkompilovat s `biblatexem` verze `1.4`.
+
 Upozornění
 ----------
 
