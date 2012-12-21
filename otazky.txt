@@ -1,17 +1,19 @@
 Otázky pro začlenění lokalizačbích maker.
 
 1. What kind of dash do you use in number ranges like "35-50"?
-\textendash? 
-Are there any spaces around the dash? -- no
-
-2. What kind of dash do you use in date ranges like "1st January-3rd February 2009"?
-\textemdash? 
-Are there any spaces around the dash? -- yes
-
-3. In lists and enumerations, do you add a comma in addition to connectors like "and"? Examples:
+\textendash 
+Are there any spaces around the dash? 
 no
 
-4. How do you format short ordinals? Are ordinals gender/number sensitive? Examples:
+2. What kind of dash do you use in date ranges like "1st January-3rd February 2009"?
+\textemdash 
+Are there any spaces around the dash?
+yes
+
+3. In lists and enumerations, do you add a comma in addition to connectors like "and"? 
+no
+
+4. How do you format short ordinals? Are ordinals gender/number sensitive? 
 1. 2. 3. 4. 5. ... [= gender/number insensitive]
 
 5. What's the gender of the word "edition"?
@@ -26,6 +28,6 @@ femine
 8. What's the short date format? Examples:
 day.\,month.\,year = 31.\,1.\,1999
 
-9. After which punctuation marks do you capitalize a word? Examples:
+9. After which punctuation marks do you capitalize a word? 
 after ". ! ?" 
 
